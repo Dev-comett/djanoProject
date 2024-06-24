@@ -1,3 +1,4 @@
+{% load static tailwind_tags %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -6,8 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chai</title>
     <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% tailwind_css %}
 </head>
-<body>
-    <h1>Django App</h1>
+<body class="bg-white">
+    <h1 class="text-black text-3xl">Django App</h1>
+
+    <p class="text-orange-700 text-3xl">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit soluta nostrum obcaecati, pariatur praesentium a in corporis rem repellat ea, fuga, excepturi dignissimos nisi. Voluptatibus suscipit itaque animi, voluptates necessitatibus expedita architecto, neque ipsam nisi quidem placeat quibusdam labore. Repellendus nesciunt recusandae fuga vero vel dolorum distinctio ipsum aliquam accusamus!
+    </p>
 </body>
 </html>
